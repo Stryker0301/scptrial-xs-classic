@@ -1,0 +1,3 @@
+service {
+    "central_finance"."devops.central_finance::CentralFinanceDM.CustomerGroupMapping" as "CustomerGroupMappings";
+}

@@ -1,0 +1,16 @@
+namespace devops.central_finance;
+
+@Schema: 'central_finance'
+context CentralFinanceDM {
+
+ 	type CustomerGroup: String(4);
+ 	type BusinessPartnerGroup: String(4);
+ 	
+ 	@Catalog.tableType: #COLUMN
+    entity CustomerGroupMapping {
+    	key SourceCustomerGroup: CustomerGroup;
+    		TargetCustomerGroup: CustomerGroup;
+    		TargetBusinessPartnerGroup: BusinessPartnerGroup;
+    };
+
+};
